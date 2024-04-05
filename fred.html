@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>The Eagle Future Managers</title>
+        <link rel="stylesheet" href="style.css">
+            <div class="logo">Logo</div>
+                        <nav>
+                <div id="nav-links">
+                    <ul>
+                        <li> <a href="">HOME</a></li>
+                        <li> <a href="">ABOUT US</a></li>
+                        <li> <a href="">SERVICES</a></li>
+                        <li> <a href="">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <button class="btn" id="loginbtn">SIGN IN</button>
+                    <button class="btn" id="registerbtn">SIGN UP</button>
+                </div>
+                <div class="menubtn">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </head>
+PART TWO
+</section>
+            
+<div id="login-form" class="login-page"> 
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"><button></button>
+            <button type="button" onclick="login()" class="toggle-btn">Register</button>
+            </div>
+     </div> 
+     <form id="login" class="input-group-login">
+        <input type="text" class="input field" placeholder="Email Id" required>
+        <input type="password" class="input field" placeholder="Enter Password" required>
+        <input type="checkbox" class="checkbox"><span>Remember Password</span>
+        <button type="submit" class="submit btn">Log in</button>
+     </form>
+     <form id="register" class="input-group-register">
+        <input type="text" class="input-field" placeholder="first Name" required>
+        <input type="text" class="input field"   placeholder="Last Name" required>
+        <input type="email" class="input field" placeholder="Email Id" required>
+        <input type="password" class="input field" placeholder="Enter Password" required>
+        <input type="password" class="input field" placeholder="Confirm Password" required>
+        <input type="checkbox" class="check-box"><span>I agree with terms and conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+    </div>
+</div>  
+</body>
+</html>
+PART THREE
+#login-form
+{
+    display: none;
+}
+
+.form-box
+{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+.button-box
+{
+    width: 220px;
+    height: 35px auto;
+    position: relative ;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn
+{
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #fFF;
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group-login
+{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-group-register
+{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;  
+    background: white;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box
+{
+    margin:30px 10px 34px 0;
+}
+span
+{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login
+{
+    left: 50px;
+}
+#login input
+{
+    color: white;
+    font-size: 15;
+}
+#register
+{
+    left: 450px;
+}
+#register input
+{
+    color: white;
+    font-size: 15;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>The Eagle Future Managers</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="connect.php">
+    </head>
+    <body> 
+          <section class="header">
+        <nav>
+                <div class="nav-links">
+            <ul>
+                <li><a href="mariga.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><button class='loginbtn'
+                    onclick="document.getElementById('login-form')
+                    .style.display='block'"
+                    style="width:auto;">LOGIN</button> </li>
+            </ul>   
+                </div>
+            </nav>
+            <div id="login-form" class="login-page"> 
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                    </div>
+                    <form id="login" class="input-group-login">
+                        <input type="text" class="input field" placeholder="Email Id" required>
+                        <input type="password" class="input field" placeholder="Enter Password" required>
+                        <button type="submit" class="submit btn">Log in</button>
+                    </form>
+                    <form action="connect.php" method="POST" id="register" class="input-group-register">
+                        <input type="text" name="first-name" class="input-field" placeholder="first-name" required>
+                        <input type="text" name="last-name" class="input field"   placeholder="last-name" required>
+                        <input type="email" name="email" class="input field" placeholder="email" required>
+                        <input type="password" name="password" class="input field" placeholder="Enter Password" required>
+                        <input type="password" name="confirm-Password" class="input field" placeholder="Confirm Password" required>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        <script>
+            var x=document.getElementById("login")
+            var y=document.getElementById("register")
+            var z=document.getElementById("btn")
+            function register()
+            {
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";              
+            }
+        </script>
+        <script>
+            var modal = document.getElementById("login-form");
+            window.onclick=function(event)
+            {
+                if (event.target==modal)
+                {
+                    modal.style.display="none";
+                }
+            }      
+      
+        </script>
+        </section>  
+    </body> 
+</html>
